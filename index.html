@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="todo-list">
+        <div class="category">
+        <h2>To-Do</h2>
+            <ul id="todo-items" class="items">
+                <li>Create functionality of this project</li>
+            </ul>
+            <div id="todo-new-task-div" class="new-task-div">
+                <input type="text" id="todo-new-task" placeholder="Add a new task">
+                <button id="add-task" onclick="addItem('todo-items')">Add item</button>
+                <button id="cancel" onclick="cancelNewTask('todo-items')">
+                    <img src="x.png"/>
+                </button>
+            </div>
+            <button id="todo-add-button" class="add-button" onclick="addTask('todo-items')">Add new task</button>
+        </div>
+        <div class="category">
+            <h2>Currently Doing</h2>
+            <ul id="doing-items" class="items">
+                <li>Enchance UI</li>
+            </ul>
+            <div id="doing-new-task-div" class="new-task-div">
+                <input type="text" id="doing-new-task" placeholder="Add a new task">
+                <button id="add-task" onclick="addItem('doing-items')">Add item</button>
+                <button id="cancel" onclick="cancelNewTask('doing-items')">
+                    <img src="x.png"/>
+                </button>
+            </div>
+            <button id="doing-add-button" class="add-button" onclick="addTask('doing-items')">Add new task</button>        </div>
+        <div class="category">
+            <h2>Done</h2>
+            <ul id="done-items" class="items">
+                <li>Create HTML/CSS fundaments</li>
+            </ul>
+            <div id="done-new-task-div" class="new-task-div">
+                <input type="text" id="done-new-task" placeholder="Add a new task">
+                <button id="add-task" onclick="addItem('done-items')">Add item</button>
+                <button id="cancel" onclick="cancelNewTask('done-items')">
+                    <img src="x.png"/>
+                </button>
+            </div>
+            <button id="done-add-button" class="add-button" onclick="addTask('done-items')">Add new task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
